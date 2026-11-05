@@ -1,7 +1,6 @@
 "use client";
 
-import { ErrorState } from "../components/Shell";
-
+import { ErrorState } from "@/components/Shell";
 export default function Error({ reset }: { error: Error; reset: () => void }) {
   return (
     <div>

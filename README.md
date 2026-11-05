@@ -1,36 +1,30 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛒 বাজার দর | BazarDor
 
-## Getting Started
+**BazarDor** is a simple and user-friendly web application that helps people check the prices of everyday grocery products in Bangladesh. Users can explore different products, browse categories, and compare market prices in one place.
 
-First, run the development server:
+The main goal of this project is to make daily shopping easier by helping people stay informed about market prices.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ✨ Key Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. **Browse Grocery Products** – Explore everyday products such as rice, vegetables, fish, meat, and other essentials with their prices.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2. **Category-Based Browsing** – Find products easily by visiting different product categories.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. **Market Price Comparison** – Check product price information and compare prices across different markets.
 
-## Learn More
+4. **User Authentication** – Create an account or sign in using email and password, Google, or GitHub.
 
-To learn more about Next.js, take a look at the following resources:
+5. **Personal Profile Management** – View your profile information and update your name when needed.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛠️ Technologies Used
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Next.js 16** 
+- **React 19** 
+- **Tailwind CSS 4** 
+- **HeroUI**
+- **Better Auth**
+- **MongoDB**
+- **Lucide React** 
+- **React Hot Toast**
+- **React Fast Marquee** 
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

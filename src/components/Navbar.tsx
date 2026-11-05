@@ -5,9 +5,9 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import toast from "react-hot-toast";
 import { ChevronDown, LogOut, User } from "lucide-react";
-import type { Category } from "../lib/types";
-import { banglaDate } from "../lib/format";
-import { signOut, useSession } from "../lib/auth-client";
+import type { Category } from "@/lib/types";
+import { banglaDate } from "@/lib/format";
+import { signOut, useSession } from "@/lib/auth-client";
 
 export default function Navbar({ categories }: { categories: Category[] }) {
   const pathname = usePathname();

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { ErrorState } from "../components/Shell";
+import { ErrorState } from "@/components/Shell";
 
 export const metadata: Metadata = { title: "৪০৪ — পাতাটি পাওয়া যায়নি" };
 

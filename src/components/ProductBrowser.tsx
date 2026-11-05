@@ -2,8 +2,8 @@
 
 import { useMemo, useState } from "react";
 import { ChevronDown, Search } from "lucide-react";
-import type { Category, Product, SortKey } from "../lib/types";
-import { sortProducts, toBn } from "../lib/format";
+import type { Category, Product, SortKey } from "@/lib/types";
+import { sortProducts, toBn } from "@/lib/format";
 import { ProductGrid } from "./Products";
 
 type Props = {

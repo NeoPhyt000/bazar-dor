@@ -1,8 +1,8 @@
 import { getCategories, getProducts } from "../lib/api";
-import Hero from "../components/Hero";
-import { PageContainer } from "../components/Shell";
-import { PriceMovers } from "../components/Products";
-import ProductBrowser from "../components/ProductBrowser";
+import Hero from "@/components/Hero";
+import { PageContainer } from "@/components/Shell";
+import { PriceMovers } from "@/components/Products";
+import ProductBrowser from "@/components/ProductBrowser";
 
 export default async function HomePage() {
   const [products, categories] = await Promise.all([getProducts(), getCategories()]);

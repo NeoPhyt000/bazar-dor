@@ -1,4 +1,4 @@
-import { PageContainer } from "../../../components/Shell";
+import { PageContainer } from "@/components/Shell";
 
 export default function Loading() {
   return (

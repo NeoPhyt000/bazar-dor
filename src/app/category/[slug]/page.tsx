@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { getCategoryBySlug, getProducts } from "../../../lib/api";
-import { toBn } from "../../../lib/format";
-import { PageContainer } from "../../../components/Shell";
-import ProductBrowser from "../../../components/ProductBrowser";
+import { getCategoryBySlug, getProducts } from "@/lib/api";
+import { toBn } from "@/lib/format";
+import { PageContainer } from "@/components/Shell";
+import ProductBrowser from "@/components/ProductBrowser";
 
 type Props = { params: Promise<{ slug: string }> };
 

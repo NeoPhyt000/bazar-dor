@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ChevronRight } from "lucide-react";
-import { getProductBySlug } from "../../../lib/api";
+import { getProductBySlug } from "@/lib/api";
 import {
   changeDir,
   changePct,

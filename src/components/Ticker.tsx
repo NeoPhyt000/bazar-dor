@@ -2,8 +2,8 @@
 
 import { useEffect, useState } from "react";
 import Marquee from "react-fast-marquee";
-import type { Product } from "../lib/types";
-import { formatTaka, pctBn, unitBn } from "../lib/format";
+import type { Product } from "@/lib/types";
+import { formatTaka, pctBn, unitBn } from "@/lib/format";
 
 const COLOR = { up: "text-rise", down: "text-fall", flat: "text-ink/55" } as const;
 const ARROW = { up: "▲", down: "▼", flat: "—" } as const;

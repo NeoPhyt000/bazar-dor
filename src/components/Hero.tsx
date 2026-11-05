@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { toBn } from "../lib/format";
+import { toBn } from "@/lib/format";
 import { BanglaDate } from "./Navbar";
 
 type Props = { productCount: number; marketCount: number; categoryCount: number };

@@ -1,6 +1,6 @@
 import Link from "next/link";
-import type { ChangeDir, Product } from "../lib/types";
-import { formatTaka, pctBn, perUnit } from "../lib/format";
+import type { ChangeDir, Product } from "@/lib/types";
+import { formatTaka, pctBn, perUnit } from "@/lib/format";
 
 const STYLE: Record<ChangeDir, { arrow: string; color: string }> = {
   up: { arrow: "▲", color: "text-rise" },

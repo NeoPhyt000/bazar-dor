@@ -1,7 +1,7 @@
 "use client";
 
 import toast from "react-hot-toast";
-import { getCallbackURL, signIn } from "../lib/auth-client";
+import { getCallbackURL, signIn } from "@/lib/auth-client";
 
 type Provider = "google" | "github";
 

@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import { Hind_Siliguri } from "next/font/google";
 import "./globals.css";
-import { getCategories, getProducts } from "../lib/api";
-import type { Category, Product } from "../lib/types";
-import Navbar from "../components/Navbar";
-import Ticker from "../components/Ticker";
-import { Footer } from "../components/Shell";
+import { getCategories, getProducts } from "@/lib/api";
+import type { Category, Product } from "@/lib/types"
+import Navbar from "@/components/Navbar";
+import Ticker from "@/components/Ticker";
+import { Footer } from "@/components/Shell";
 import { Toaster } from "react-hot-toast";
 
 const hindSiliguri = Hind_Siliguri({

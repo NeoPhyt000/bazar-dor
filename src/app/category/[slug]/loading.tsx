@@ -1,5 +1,5 @@
-import { PageContainer } from "../../../components/Shell";
-import { GridSkeleton } from "../../../components/Products";
+import { PageContainer } from "@/components/Shell";
+import { GridSkeleton } from "@/components/Products";
 
 export default function Loading() {
   return (
