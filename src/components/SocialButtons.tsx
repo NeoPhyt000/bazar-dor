@@ -1,0 +1,44 @@
+"use client";
+
+import toast from "react-hot-toast";
+import { getCallbackURL, signIn } from "../lib/auth-client";
+
+type Provider = "google" | "github";
+
+
+export default function SocialButtons() {
+  const handleSocialSignIn = async (provider: Provider) => {
+    const { error } = await signIn.social({ provider, callbackURL: getCallbackURL() });
+    if (error) {
+      toast.error(error.message || "সাইন ইন করা যায়নি, আবার চেষ্টা করুন।");
+    }
+  };
+
+  return (
+    <div className="grid grid-cols-1 gap-2 min-[420px]:grid-cols-2">
+      <button
+        type="button"
+        onClick={() => handleSocialSignIn("google")}
+        className="btn btn-outline w-full px-2 text-[13px] sm:text-sm"
+      >
+        <svg viewBox="0 0 24 24" className="size-4" aria-hidden="true">
+          <path fill="#4285F4" d="M23.5 12.27c0-.85-.08-1.67-.22-2.45H12v4.64h6.45a5.5 5.5 0 0 1-2.39 3.61v3h3.86c2.26-2.08 3.58-5.15 3.58-8.8Z" />
+          <path fill="#34A853" d="M12 24c3.24 0 5.95-1.07 7.93-2.91l-3.87-3a7.2 7.2 0 0 1-10.7-3.78H1.37v3.1A12 12 0 0 0 12 24Z" />
+          <path fill="#FBBC05" d="M5.36 14.31a7.2 7.2 0 0 1 0-4.62v-3.1H1.37a12 12 0 0 0 0 10.82l3.99-3.1Z" />
+          <path fill="#EA4335" d="M12 4.75c1.76 0 3.34.6 4.58 1.8l3.43-3.43A11.5 11.5 0 0 0 12 0 12 12 0 0 0 1.37 6.59l3.99 3.1A7.15 7.15 0 0 1 12 4.75Z" />
+        </svg>
+        Google দিয়ে চালিয়ে যান
+      </button>
+      <button
+        type="button"
+        onClick={() => handleSocialSignIn("github")}
+        className="btn btn-outline w-full px-2 text-[13px] sm:text-sm"
+      >
+        <svg viewBox="0 0 24 24" className="size-4" fill="currentColor" aria-hidden="true">
+          <path d="M12 .5A11.5 11.5 0 0 0 .5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.74.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.62 1.58.23 2.75.11 3.04.74.81 1.18 1.83 1.18 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z" />
+        </svg>
+        GitHub দিয়ে চালিয়ে যান
+      </button>
+    </div>
+  );
+}
