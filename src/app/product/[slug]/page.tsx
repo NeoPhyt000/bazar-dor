@@ -12,9 +12,9 @@ import {
   summarize,
   toBn,
   unitBn,
-} from "../../../lib/format";
-import { ChangeBadge } from "../../../components/Products";
-import { PageContainer } from "../../../components/Shell";
+} from "@/lib/format";
+import { ChangeBadge } from "@/components/Products";
+import { PageContainer } from "@/components/Shell";
 
 type Props = { params: Promise<{ slug: string }> };
 

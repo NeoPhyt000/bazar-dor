@@ -8,7 +8,7 @@ const db = client.db(process.env.MONGO_DB_NAME || "bazardor");
 export const auth = betterAuth({
   emailAndPassword: {
     enabled: true,
-    // After sign up the user goes to the sign in page (no auto login)
+   
     autoSignIn: false,
   },
   socialProviders: {
