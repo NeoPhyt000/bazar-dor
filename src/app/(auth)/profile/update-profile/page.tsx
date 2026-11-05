@@ -4,8 +4,8 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import toast from "react-hot-toast";
 import { ArrowLeft, Eye, EyeOff } from "lucide-react";
-import { getCallbackURL, signIn } from "../../../lib/auth-client";
-import SocialButtons from "../../../components/SocialButtons";
+import { getCallbackURL, signIn } from "@/lib/auth-client";
+import SocialButtons from "@/components/SocialButtons";
 
 export default function SignInPage() {
   const [isVisible, setIsVisible] = useState(false);
